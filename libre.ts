@@ -53,7 +53,7 @@ export function activate(context: ExtensionContext) {
 									.toString()))
 							.filter(ext => !exts
 								.includes(ext))
-				            .forEach(ext => {
+							.forEach(ext => {
 								channel
 									.appendLine(`Updating ${ext.name} to version ${ext.version}`);
 
