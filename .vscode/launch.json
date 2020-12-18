@@ -1,14 +1,14 @@
 {
-	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Run Extension",
-			"type": "extensionHost",
-			"request": "launch",
 			"args": [
 				"--extensionDevelopmentPath=${workspaceFolder}"
 			],
-			"preLaunchTask": "compile"
+			"name": "Run Extension",
+			"preLaunchTask": "compile",
+			"type": "extensionHost",
+			"request": "launch"
 		}
-	]
+	],
+	"version": "0.2.0"
 }
