@@ -1,0 +1,42 @@
+{
+	"name": "libre",
+	"displayName": "libre",
+	"description": "Libre extension manager",
+	"version": "0.0.1",
+	"publisher": "libre-code",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:libre.get",
+		"onCommand:libre.update"
+	],
+	"main": "./libre.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "libre.get",
+				"title": "Libre get extension"
+			},
+			{
+				"command": "libre.update",
+				"title": "Libre update"
+			}
+		]
+	},
+	"scripts": {
+		"compile": "tsc",
+		"vscode:prepublish": "tsc",
+		"watch": "tsc -w"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.52.0",
+		"typescript": "^4.1.2"
+	},
+	"dependencies": {
+		"@octokit/rest": "^18.0.12"
+	}
+}
